@@ -1,0 +1,53 @@
+1  ssh 172.31.10.38
+    2  ssh -keygen
+    3  ssh-keygen
+    4  ssh-copy-id ansible@172.31.10.38
+    5  ssh 172.31.10.38
+    6  ansible demo -m ping
+    7  ansible demo -b -m yum -a "pkg=httpd state=present"
+    8  ansible demo -b -a "which httpd"
+    9  ansible demo -b -a "yum install httpd"
+   10  cd ..
+   11  exit
+   12  ansible demo -m ping
+   13  ansible demo -b -m yum -a "pkg=httpd state=present"
+   14  ansible demo -a
+   15  ansible demo -a "sudo which httpd"
+   16  visudo
+   17  exit
+   18  ssh 172.31.10.38
+   19  ansible demo -m ping
+   20  ansible demo -b -m yum -a "pkg=httpd state=present"
+   21  ansible demo -b -m shell -a "systemctl status httpd"
+   22  ansible demo -b -m service -a "name=httpd state=started"
+   23  ansible demo -b -a "systemctl status httpd"
+   24  ansible demo -b -m command -a "systemctl status httpd"
+   25  ansible demo -b -m service -a "name=httpd state=stopped"
+   26  ansible demo -b -m yum -a "pkg=httpd state=absent"
+   27  ansible demo -b -a "which httpd"
+   28  ansible demo -b -m yum -a "pkg=httpd state=present"
+   29  ansible demo -b -m service -a "name=httpd state=started"
+   30  ansible demo -b -m user -a "name=sneha state=present"
+   31  ansible demo -b -m user -a "cat/etc/passwd
+
+   32  ansible demo -b -m user -a "cat/etc/passwd"
+   33  ansible demo -b -m user -a "name=sneha state=absent"
+   34  ansible demo -b -m group -a "name=DevOps state=present"
+   35  ansible demo -b -a "cat/etc/group"
+   36  ansible demo -b -a "cat /etc/group"
+   37  ansible demo -b -m group -a "name=DevOps state=absent"
+   38  ansible demo -b -m file -a "path=/home/ansible/demo state=directory"
+   39  ansible demo -b -m file -a "path=/home/ansible/demo state=absent"
+   40  ansible demo -b -m file -a "path=/home/ansible/demo state=directory mode=0755"
+   41  ansible demo -b -m file -a "path=/home/ansible/demo state=absent mode=0755"
+   42  ansible demo -b -m file -a "path=/home/ansible/jsp.txt state=touch"
+   43  ansible demo -b -m file -a "path=/home/ansible/jsp.txt state=absent"
+   44  ansible demo -b -m file -a "path=/home/ansible/jsp.txt state=touch mode=0755"
+   45  ansible demo -b -m file -a "path=/home/ansible/jsp.txt state=absent mode=0755"
+   46  ansible demo -b -m copy -a "src=/home/ansible/jsp.txt dest=/home/ansible"
+   47   ansible demo -b -m file -a "path=/home/ansible/jsp.txt state=touch mode=0755"
+   48  ansible demo -b -m copy -a "src=/home/ansible/jsp.txt dest=/home/ansible"
+   49  ls
+   50  touch jsp.txt
+   51  ansible demo -b -m copy -a "src=/home/ansible/jsp.txt dest=/home/ansible"
+   52  history
